@@ -1,0 +1,68 @@
+.border-about-core-r {
+  border: linear-gradient(to right, rgb(229, 206, 192) 50%, #7b5133 50%);
+  border-top-width: 3px;
+  border-bottom-width: 3px;
+  border-left-width: 3px;
+  border-top-left-radius: 1rem;
+  /* You might need to adjust the value based on your design */
+  border-bottom-left-radius: 1rem;
+}
+
+.border-about-core {
+  border: linear-gradient(to right, rgb(229, 206, 192) 50%, #7b5133 50%);
+  /* background-image: linear-gradient(to right, #d1d1d1 50%, #7b5133 50%); */
+  border-top-width: 3px;
+  border-bottom-width: 3px;
+  border-right-width: 3px;
+  border-top-right-radius: 1rem;
+  /* You might need to adjust the value based on your design */
+  border-bottom-right-radius: 1rem;
+}
+
+.raleway-font-core {
+  font-family: "Raleway", sans-serif;
+  color: rgb(54, 54, 54);
+  /* font-optical-sizing: auto; */
+  font-weight: 100;
+  font-style: dark;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 720px) and (max-height: 1600px) {
+  .raleway-font-core {
+    color: red;
+  }
+}
+
+
+/* Core_Offerings.tsx */
+.avenir-lt {
+  font-family: "Avenir LT W01_35 Light", sans-serif;
+  color: rgb(104, 104, 104);
+  font-size: 16px;
+  line-height: 26px;
+  font-style: normal;
+  font-stretch: expanded;
+  font-weight: calc(1);
+}
+
+.border-about-l {
+  border: linear-gradient(to right, rgb(229, 206, 192) 50%, #7b5133 50%);
+  /* background-image: linear-gradient(to right, #d1d1d1 50%, #7b5133 50%); */
+  border-top-width: 3px;
+  border-bottom-width: 3px;
+  border-right-width: 3px;
+  border-top-right-radius: 1rem;
+  /* You might need to adjust the value based on your design */
+  border-bottom-right-radius: 1rem;
+}
+
+.border-about-r {
+  border: linear-gradient(to right, rgb(229, 206, 192) 50%, #7b5133 50%);
+  border-top-width: 3px;
+  border-bottom-width: 3px;
+  border-left-width: 3px;
+  border-top-left-radius: 1rem;
+  /* You might need to adjust the value based on your design */
+  border-bottom-left-radius: 1rem;
+}

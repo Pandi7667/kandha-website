@@ -1,0 +1,37 @@
+.shadow-xl-case {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6); /* Adjust the shadow color and intensity as needed */
+  }
+  
+  .border-about-r {
+    border: linear-gradient(to right, rgb(229, 206, 192) 50%, #7b5133 50%);
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+    border-top-left-radius: 1rem;
+    /* You might need to adjust the value based on your design */
+    border-bottom-left-radius: 1rem;
+  }
+  
+  .border-about-case { 
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-right-width: 3px;
+    border-left-width: 3px;
+    border-radius: 2rem;
+  }
+
+ /* For mobile view */
+@media (max-width: 767px) {
+  .object-top-mobile {
+    object-position: top;
+    top: 112px;
+  }
+}
+
+.line-gradient {
+  background: linear-gradient(to right,
+      rgb(229, 206, 192) 25%,
+      rgb(169, 128, 111) 25% 50%,
+      rgb(139, 97, 79) 50% 75%,
+      rgb(95, 58, 41) 75%);
+}

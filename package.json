@@ -1,0 +1,42 @@
+{
+  "name": "kandha",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-hook/media-query": "^1.1.1",
+    "@sanity/block-content-to-react": "^3.0.0",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/vision": "^3.30.1",
+    "axios": "^1.6.8",
+    "body-parser": "^1.20.2",
+    "cheerio": "^1.0.0-rc.12",
+    "express": "^4.18.3",
+    "mongoose": "^8.2.3",
+    "next": "^14.1.1",
+    "next-navigation": "^1.0.6",
+    "next-sanity": "^7.1.4",
+    "nodemailer": "^6.9.12",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.0.1",
+    "sanity": "^3.30.1",
+    "styled-components": "^6.1.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}

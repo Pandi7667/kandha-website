@@ -1,0 +1,157 @@
+/* ./app/globals.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'AvenirLTProLight'; /* Replace with your font name */
+  src: url('./assets/AvenirLTProLight.otf') format('otf'); /* Adjust path and format */
+}
+
+@font-face {
+  font-family: "Avenir LT W01_35 Light";
+  src: url("./assets/Avenir\ LT\ 35\ Light\ Regular.ttf") format("ttf"),
+    url("./assets/Avenir\ LT\ 35\ Light\ Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* font-family: avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif; */
+
+/* Sen-specific utility classes */
+.sen-light {
+  @apply font-sen font-light;
+}
+
+.sen-regular {
+  @apply font-sen font-normal;
+}
+
+.sen-medium {
+  @apply font-sen font-medium;
+}
+
+.sen-bold {
+  @apply font-sen font-bold;
+}
+
+.line-gradient {
+  background: linear-gradient(to right,
+      rgb(229, 206, 192) 25%,
+      rgb(169, 128, 111) 25% 50%,
+      rgb(139, 97, 79) 50% 75%,
+      rgb(95, 58, 41) 75%);
+}
+
+/* Core_Offerings.tsx */
+.avenir-lt {
+  font-family: "Avenir LT W01_35 Light", sans-serif; 
+  color: rgb(104, 104, 104); 
+  font-size: 16px; 
+  line-height: 26px; 
+  font-style: normal;
+  font-stretch: expanded;
+  font-weight:calc(1);
+}
+
+.raleway-font {
+  font-family: "Raleway", sans-serif;
+  color: rgb(80, 79, 79);
+  /* font-optical-sizing: auto; */
+  font-weight: 100;
+  font-style: dark;
+  font-size: 16px; 
+}
+
+.border-about-l {
+  border: linear-gradient(to right, rgb(229, 206, 192) 50%, #7b5133 50%);
+  /* background-image: linear-gradient(to right, #d1d1d1 50%, #7b5133 50%); */
+  border-top-width: 3px;
+  border-bottom-width: 3px;
+  border-right-width: 3px;
+  border-top-right-radius: 1rem;
+  /* You might need to adjust the value based on your design */
+  border-bottom-right-radius: 1rem;
+}
+
+.border-about-r {
+  border: linear-gradient(to right, rgb(229, 206, 192) 50%, #7b5133 50%);
+  border-top-width: 3px;
+  border-bottom-width: 3px;
+  border-left-width: 3px;
+  border-top-left-radius: 1rem;
+  /* You might need to adjust the value based on your design */
+  border-bottom-left-radius: 1rem;
+}
+
+/* Core_Team.tsx */
+.cutoff-text {
+  --max-lines: 3;
+  --line-height: 1.4;
+  max-height: calc(var(--max-lines) * 1em * var(--line-height));
+  overflow: hidden;
+}
+
+.cutoff-text:has(+ .read-more:checked) {
+  max-height: none;
+}
+
+.read-more {
+  appearance: none;
+  padding: .5em;
+  cursor: pointer;
+  text-align: left;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+  text-underline-color: white;
+}
+
+.read-more::before {
+  content: "Read more";
+}
+
+.read-more:checked::before {
+  content: "Hide";
+}
+
+/* Govt_Service.tsx */
+.transition-button {
+  padding: 0.5rem 1rem;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  transform: translate(-60%, 50%);
+  animation: slideRightToCenter 2s ease-in-out forwards;
+}
+
+@keyframes slideRightToCenter {
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: 50%;
+  }
+}
+
+/* Case Study */
+.shadow-xl {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6); /* Adjust the shadow color and intensity as needed */
+}

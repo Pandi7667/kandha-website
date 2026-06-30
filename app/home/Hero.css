@@ -1,0 +1,86 @@
+
+@font-face {
+  font-family: 'Genome-Thin'; /* Replace with your font name */
+  src: url('../assets//Genome-Thin.otf') format('otf'); /* Adjust path and format */
+}
+.my-genome {
+  font-family: 'Genome-Thin'; 
+  font-weight:lighter;
+  font-size:large;
+  color: #676767;
+  font-style: normal;
+}
+
+.font-sans-serif {
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: 400; */
+    color: rgb(104, 104, 104);
+    font-style: normal;
+    size: 16px;
+    font-stretch: expanded;
+  }
+
+  /* .avenir-lt {
+    font-family: "Avenir LT W01_35 Light", sans-serif; 
+    color: rgb(104, 104, 104); 
+    font-size: 16px; 
+    line-height: 26px; 
+    font-style: normal;
+    font-stretch: expanded;
+    font-weight:calc(1);
+  } */
+
+  /* Common styles */
+.avenir-lt {
+  font-family: "Avenir LT W01_35 Light", sans-serif; 
+  font-size: 16px; 
+  line-height: 26px; 
+  font-style: normal;
+  font-stretch: expanded;
+}
+
+/* Mobile view */
+@media only screen and (max-width: 767px) {
+  .avenir-lt {
+    color: black;
+    font-weight: 300; /* Adjust font weight for mobile view if needed */
+  }
+}
+
+/* Desktop view */
+@media only screen and (min-width: 768px) {
+  .avenir-lt {
+    color: rgb(104, 104, 104);
+    font-weight: calc(1); /* Adjust font weight for desktop view if needed */
+  }
+}
+
+.line-gradient {
+    background: linear-gradient(
+      to right,
+      rgb(229,206,192) 25%,
+      rgb(169,128,111) 25% 50%,
+      rgb(139,97,79) 50% 75%,
+      rgb(95,58,41) 75% 
+    );
+  }
+
+  .my-avenir {
+    font-family: 'AvenirLTProLight', sans-serif; /* Use the font */
+    font-weight:100;
+    font-size:90%;
+    color: #4a4a4a;
+  /* font-style: normal; */ 
+  }
+
+  .raleway-font {
+    font-family: "Raleway", sans-serif;
+    color: rgb(104, 104, 104);
+    /* font-optical-sizing: auto; */
+    font-weight: 100;
+    font-style: light;
+    font-size: 12px; 
+    line-height: 20px; 
+    line-break: auto;
+    gap: 1rem;
+  }
